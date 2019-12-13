@@ -14,3 +14,31 @@ Example:
     inet6 fe80::20c:29ff:fe10:a5f9/64 scope link 
        valid_lft forever preferred_lft forever
 ```
+
+Example (JSON):
+```
+# curl -s 'http://localhost:8181/debug' | sect "dev_list"
+    "dev_list": {
+      "10.0.11.248": {
+        "id": "serial:76310777A09A",
+        "proc_error": "",
+        "proc_result": "done in 6 ms",
+        "state": "run",
+        "time": 1576229006
+      },
+      "10.0.6.48": {
+        "id": "lldp:f8f0827867be",
+        "proc_error": "",
+        "proc_result": "done in 8 ms",
+        "state": "run",
+        "time": 1576229041
+      },
+      "10.0.6.49": {
+        "id": "lldp:f8f082736bf5",
+        "proc_error": "",
+        "proc_result": "done in 24 ms",
+        "state": "run",
+        "time": 1576229022
+      }
+    },
+```
