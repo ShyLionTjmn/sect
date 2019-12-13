@@ -42,3 +42,14 @@ Example (JSON):
       }
     },
 ```
+
+Building:
+
+setup GOPATH variable first
+
+```
+go get github.com/ShyLionTjmn/sect
+cd $GOPATH/src/github.com/ShyLionTjmn/sect
+go build
+cp sect /usr/local/bin/
+```
