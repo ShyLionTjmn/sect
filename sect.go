@@ -8,6 +8,8 @@ import (
   "regexp"
 )
 
+//test comment
+
 func main() {
 
   if len(os.Args) != 2 {
